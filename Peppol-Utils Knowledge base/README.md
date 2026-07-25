@@ -14,3 +14,14 @@ The stable channel uses:
 Applications must verify the detached Ed25519 signature on the manifest and
 the signed archive size and SHA-256 before installing a bundle. Published
 versioned archives must not be replaced in place.
+
+## Current stable bundle
+
+- Version: `2026.07.25.1`
+- Documents: 75
+- Search chunks: 2,955
+- Archive SHA-256:
+  `24d6476a1a86356fadf5e2702fcc9d152a03647f57a8d939286ed932dab40208`
+- Signing key ID: `kb-ed25519-2026-01`
+- Public-key SHA-256:
+  `0e7d44722c32c0e09d66c2ba7d73688532038c920d41343379aaca58a6f8e8dd`
