@@ -1,41 +1,19 @@
-# Peppol-Utils Knowledge base
+# Peppol-Utils Knowledge Base distribution
 
-This directory is the public static distribution channel for generated
-Peppol-utils Knowledge Base artifacts.
-
-The stable channel uses:
-
-- `knowledge-base-manifest.json`
-- `knowledge-base-manifest.sig`
-- versioned `knowledge-base-v<version>.zip` archives
-- matching `.sha256` sidecars
-- non-sensitive `build-report.json` metadata
-- mandatory retrieval results in `evaluation-report.json`
-
-Applications must verify the detached Ed25519 signature on the manifest and
-the signed archive size and SHA-256 before installing a bundle. Published
-versioned archives must not be replaced in place.
+This directory is the signed stable-channel metadata for the generated Peppol-utils Knowledge Base. The current bundle archive is published as a GitHub Release rather than committed to the source branch.
 
 ## Current stable bundle
 
-- Version: `2026.07.26.2`
+- Version: `2026.07.30.3`
+- Bundle schema: `2`
+- Minimum application version: Peppol-utils `0.6.2`
 - Documents: 75
 - Search chunks: 3,039
-- Archive SHA-256:
-  `7d25f12ff486f14819b66c5320005668b664dc91d6fb41b19a5deeefa8b225fc`
+- Archive size: 93,562,551 bytes
+- Archive SHA-256: `93fe04c71a5dfad34d8a9e505a148d2788bd0033ae338cd0ba8a0ba9bbcbab38`
 - Signing key ID: `kb-ed25519-2026-07`
-- Public-key SHA-256:
-  `dd47d02f3024e0ebfbd466b96badece0ec0aad8fb5be39c0d8fe64173092cd72`
+- Release: [kb-v2026.07.30.3](https://github.com/Duclevn/Peppol-utils-KB/releases/tag/kb-v2026.07.30.3)
 
-Version `2026.07.25.1` was withdrawn before application integration because
-Git normalized the signed manifest's Windows line ending. Version
-`2026.07.25.2` uses platform-independent LF bytes for signing and publication.
+The application authenticates the exact bytes of `knowledge-base-manifest.json` with `knowledge-base-manifest.sig`, then verifies the signed archive URL, size, and SHA-256 before installation. Schema-v1 bundles have been withdrawn and are not supported by the current application.
 
-Version `2026.07.26.1` adds structure-aware PDF extraction, structured glossary
-definitions, current-version preference, retrieval diversity, and a mandatory
-15-question publication quality gate.
-
-Version `2026.07.26.2` requires Peppol-utils 0.6.1 and adds document-first
-retrieval, coherent neighboring-page expansion, multilingual terminology
-improvements, adaptive prompt context, a 16-question publication gate, and the
-July 2026 signing-key rotation.
+Only the current downloadable bundle is retained. Source documents and Git history remain available for reproducible provenance and citations.
