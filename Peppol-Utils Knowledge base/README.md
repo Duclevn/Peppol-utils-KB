@@ -4,16 +4,16 @@ This directory is the signed stable-channel metadata for the generated Peppol-ut
 
 ## Current stable bundle
 
-- Version: `2026.07.30.3`
-- Bundle schema: `2`
-- Minimum application version: Peppol-utils `0.6.2`
+- Version: `2026.08.01.1`
+- Bundle schema: `3`
+- Minimum application version: Peppol-utils `0.6.0`
 - Documents: 75
 - Search chunks: 3,039
-- Archive size: 93,562,551 bytes
-- Archive SHA-256: `93fe04c71a5dfad34d8a9e505a148d2788bd0033ae338cd0ba8a0ba9bbcbab38`
+- Archive size: 4,144,152 bytes
+- Archive SHA-256: `573e29863c397754badd47ff1becac9fe467937c8580733ae1f2c6d3411f478f`
 - Signing key ID: `kb-ed25519-2026-07`
-- Release: [kb-v2026.07.30.3](https://github.com/Duclevn/Peppol-utils-KB/releases/tag/kb-v2026.07.30.3)
+- Release: [kb-v2026.08.01.1](https://github.com/Duclevn/Peppol-utils-KB/releases/tag/kb-v2026.08.01.1)
 
-The application authenticates the exact bytes of `knowledge-base-manifest.json` with `knowledge-base-manifest.sig`, then verifies the signed archive URL, size, and SHA-256 before installation. Schema-v1 bundles have been withdrawn and are not supported by the current application.
+The application authenticates the exact bytes of `knowledge-base-manifest.json` with `knowledge-base-manifest.sig`, then verifies the signed archive URL, size, and SHA-256 before installation. The current application requires schema-v3 bundles.
 
 Only the current downloadable bundle is retained. Source documents and Git history remain available for reproducible provenance and citations.
