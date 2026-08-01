@@ -10,7 +10,7 @@ This directory is the signed stable-channel metadata for the generated Peppol-ut
 - Documents: 75
 - Search chunks: 3,039
 - Archive size: 4,144,152 bytes
-- Archive SHA-256: `573e29863c397754badd47ff1becac9fe467937c8580733ae1f2c6d3411f478f`
+- Archive SHA-256: `7d3df497ec9cb361f6301fda14afd13cfded80e9d4f5b33efb53ac313603f945`
 - Signing key ID: `kb-ed25519-2026-07`
 - Release: [kb-v2026.08.01.1](https://github.com/Duclevn/Peppol-utils-KB/releases/tag/kb-v2026.08.01.1)
 
